@@ -21,3 +21,15 @@ Topics covered in NLP in class are of two types: <br>
 2. Applications: Relation extraction, Question Answering, Machine translation, Language generation. <br>
 
 <h3> Tensor flow introduction: </h3>
+Written in tensor flow article, only mentioning the parts which are missing over there. <br>
+Advantages of tensor flow:- <br>
+1. Parallelism: One of the graph computation can happen parallely at local system and other at a remote system. The graph needs to be such that it can be independetly computed for this to happen.<br>
+2. Distributed exection: The computation can happen on CPU's, GPU's and TPU's parallely as each edge can run on sepearte CPU's, GPU's etc. There is proper coordination and protcols between them to handle the communication. <br>
+3. Portability: The code can be written in python and the computational graph can be generated, after that it can be converted to the low level languages like C++ from the computational graph. 
+4. Complier: Tensor flow XLA compiler can be used to generate the code faster from your computational graph. <br>
+
+There are 3 types of file generated when you run a tensor flow model: <br>
+1. .meta file: It stores the graph structure. <br>
+2 .data file: It stores the value of each variable in the graph. <br>
+3 .index file: It stores the checkpoint information. <br> 
+
